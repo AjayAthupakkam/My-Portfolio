@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, MessageSquare, Github, Linkedin, ArrowRight } from 'lucide-react';
+import { Mail, MessageSquare, Github, Linkedin, ArrowRight, Phone } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -18,6 +18,7 @@ const Contact = () => {
   };
 
   const contactChannels = [
+    { icon: Phone, label: 'Phone', value: '+91 7826042995', href: 'tel:+917826042995' },
     { icon: Mail, label: 'Email', value: 'ajayofficial08@outlook.com', href: 'mailto:ajayofficial08@outlook.com' },
     { icon: Linkedin, label: 'LinkedIn', value: 'linkedin.com/in/ajay-athupakkam', href: 'https://www.linkedin.com/in/ajay-athupakkam-11691a249' },
     { icon: Github, label: 'GitHub', value: 'github.com/AjayAthupakkam', href: 'https://github.com/AjayAthupakkam' },
@@ -38,7 +39,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="max-w-md mx-auto">
           {/* Contact Channels */}
           <div className="terminal-card">
             <div className="terminal-header">
@@ -68,75 +69,6 @@ const Contact = () => {
                 ))}
               </div>
             </div>
-          </div>
-
-          {/* Contact Form */}
-          <div className="terminal-card">
-            <div className="terminal-header">
-              <span className="terminal-dot terminal-dot-red" />
-              <span className="terminal-dot terminal-dot-yellow" />
-              <span className="terminal-dot terminal-dot-green" />
-              <span className="ml-4 font-mono text-xs text-muted-foreground">contact_form.sh</span>
-            </div>
-            <form onSubmit={handleSubmit} className="p-6 space-y-6">
-              <div>
-                <label className="font-mono text-xs text-muted-foreground block mb-2">
-                  $ enter_name
-                </label>
-                <div className="flex items-center gap-2">
-                  <span className="text-primary font-mono">{'>'}</span>
-                  <input
-                    type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="terminal-input"
-                    placeholder="_"
-                    required
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label className="font-mono text-xs text-muted-foreground block mb-2">
-                  $ enter_email
-                </label>
-                <div className="flex items-center gap-2">
-                  <span className="text-primary font-mono">{'>'}</span>
-                  <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="terminal-input"
-                    placeholder="_"
-                    required
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label className="font-mono text-xs text-muted-foreground block mb-2">
-                  $ enter_message
-                </label>
-                <div className="flex items-start gap-2">
-                  <span className="text-primary font-mono mt-2">{'>'}</span>
-                  <textarea
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    className="terminal-input min-h-[100px] resize-none"
-                    placeholder="_"
-                    required
-                  />
-                </div>
-              </div>
-
-              <button type="submit" className="w-full btn-outline justify-center group">
-                RUN CONTACT_PROTOCOL
-                <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-              </button>
-            </form>
           </div>
         </div>
       </div>

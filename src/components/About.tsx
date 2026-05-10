@@ -1,31 +1,33 @@
-import { Code2, Database, Globe, Server, Cloud, Terminal as TerminalIcon, Wrench, Brain, BarChart3 } from 'lucide-react';
+import { Code2, Database, Globe, Server, Cloud, Terminal as TerminalIcon, Wrench, Brain, BarChart3, Cpu, Network, LineChart } from 'lucide-react';
 
 const techStack = {
   technical: [
+    { name: 'Python', icon: TerminalIcon },
+    { name: 'R', icon: BarChart3 },
     { name: 'JavaScript', icon: Code2 },
     { name: 'TypeScript', icon: Code2 },
     { name: 'React', icon: Globe },
     { name: 'Node.js', icon: Server },
-    { name: 'Python', icon: TerminalIcon },
-    { name: 'Java', icon: Code2 },
-    { name: 'C++', icon: Code2 },
-    { name: 'C', icon: Code2 },
-    { name: 'HTML5', icon: Code2 },
-    { name: 'CSS3', icon: Code2 },
+    { name: 'HTML/CSS', icon: Code2 },
+    { name: 'Machine Learning', icon: Brain },
+    { name: 'Deep Learning', icon: Network },
+    { name: 'NLP', icon: Brain },
+    { name: 'Data Analysis', icon: LineChart },
     { name: 'PyTorch', icon: Brain },
-    { name: 'REST APIs', icon: Server },
+    { name: 'TensorFlow', icon: Cpu },
+    { name: 'Scikit-Learn', icon: Network },
+    { name: 'Pandas', icon: Database },
+    { name: 'NumPy', icon: Database },
   ],
   tools: [
+    { name: 'Jupyter', icon: TerminalIcon },
     { name: 'Git', icon: Wrench },
-    { name: 'GitHub', icon: Wrench },
     { name: 'Docker', icon: Cloud },
     { name: 'AWS', icon: Cloud },
+    { name: 'SQL', icon: Database },
     { name: 'MongoDB', icon: Database },
-    { name: 'MS SQL', icon: Database },
     { name: 'Power BI', icon: BarChart3 },
     { name: 'Tableau', icon: BarChart3 },
-    { name: 'VS Code', icon: TerminalIcon },
-    { name: 'Linux', icon: TerminalIcon },
   ],
 };
 
