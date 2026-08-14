@@ -19,7 +19,7 @@ const Contact = () => {
 
   const contactChannels = [
     { icon: Phone, label: 'Phone', value: '+91 7826042995', href: 'tel:+917826042995' },
-    { icon: Mail, label: 'Email', value: 'ajayofficial08@outlook.com', href: 'mailto:ajayofficial08@outlook.com' },
+    { icon: Mail, label: 'Email', value: 'ajayathupakkamofficial@gmail.com', href: 'mailto:ajayathupakkamofficial@gmail.com' },
     { icon: Linkedin, label: 'LinkedIn', value: 'linkedin.com/in/ajay-athupakkam', href: 'https://www.linkedin.com/in/ajay-athupakkam-11691a249' },
     { icon: Github, label: 'GitHub', value: 'github.com/AjayAthupakkam', href: 'https://github.com/AjayAthupakkam' },
   ];

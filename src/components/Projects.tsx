@@ -24,6 +24,14 @@ const projects: Project[] = [
   },
   {
     id: 2,
+    title: 'Machine Learning Projects',
+    description: 'Multiple Model AI System featuring Diabetes, Heart Disease, and Parkinson\'s predictions, plus Course Recommendation.',
+    image: '/ml-system.png',
+    tags: ['PYTHON', 'STREAMLIT', 'MACHINE LEARNING', 'SCIKIT-LEARN'],
+    liveUrl: 'https://savedmodels-hfk2jjbmpednjmdwshsgob.streamlit.app/',
+  },
+  {
+    id: 3,
     title: 'Image Editing App',
     description: 'Generative image editing tool powered by Gemini AI and Cloudinary.',
     image: '/imgply.png',
@@ -32,7 +40,7 @@ const projects: Project[] = [
     githubUrl: 'https://github.com/AjayAthupakkam/IMGPLY_APP_editing_image_by_Cloudinary',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Wireframe to Code',
     description: 'Convert wireframes to React/HTML/CSS code using AI.',
     image: '/w2c.png',
@@ -41,7 +49,7 @@ const projects: Project[] = [
     githubUrl: 'https://github.com/AjayAthupakkam/w2c',
   },
   {
-    id: 4,
+    id: 5,
     title: 'E-commerce Store',
     description: 'Shopping site built with a public API (dummy JSON) for product listings.',
     image: '/e-commerce.png',
@@ -139,7 +147,7 @@ const Projects = () => {
 
         <div className="mt-12 text-center">
           <a
-            href="https://github.com"
+            href="https://github.com/AjayAthupakkam"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors font-mono text-sm"
